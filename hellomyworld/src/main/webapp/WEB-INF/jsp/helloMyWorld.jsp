@@ -14,7 +14,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
 .titleSpan{padding-left:20px};
 </style>
-
+</head>
 <body>
 
 <nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none">
