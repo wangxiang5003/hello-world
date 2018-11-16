@@ -34,6 +34,7 @@ public class HelloMyWorldController {
 		
 		if(f.list()==null) {
 			f.mkdir();
+			f = new File(context.getRealPath("/img"));
 		}
 		if (filelist.length != count) {
 			consistentImg(filelist);
