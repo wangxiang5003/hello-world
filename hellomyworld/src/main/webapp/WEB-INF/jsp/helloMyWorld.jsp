@@ -18,13 +18,13 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 <body>
 
 <nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-large w3-hover-red">Close &times;</a>
-  <a href="addPhoto" class="w3-large w3-hover-green">add photo</a>		
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-large w3-hover-red">CLOSE &times;</a>
+  <a href="addPhoto" class="w3-large w3-hover-green">ADD PHOTO</a>		
 </nav>
 
 <header class="w3-container w3-teal">
   <span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
-  <span class="w3-large titleSpan">Photo show</span>
+  <span class="w3-large titleSpan">PHOTO SHOW</span>
  
 </header>
 

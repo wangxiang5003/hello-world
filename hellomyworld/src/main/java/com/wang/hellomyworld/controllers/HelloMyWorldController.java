@@ -3,7 +3,6 @@ package com.wang.hellomyworld.controllers;
 import com.wang.hellomyworld.dao.HelloDao;
 import java.io.BufferedOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -25,7 +24,7 @@ public class HelloMyWorldController {
 	@Autowired
 	HelloDao dao;
 
-	@RequestMapping({ "/helloWorld" })
+	@RequestMapping("/helloWorld")
 	public ModelAndView hello() {
 		int count = dao.getImgCount();
 
@@ -78,7 +77,7 @@ public class HelloMyWorldController {
 			try {
 				BufferedOutputStream out = new BufferedOutputStream(
 						new FileOutputStream(context.getRealPath("/img/") + (String) fNList.get(i)));
-				out.write((byte[]) bsList.get(i), 0, ((byte[]) bsList.get(i)).length);
+				out.write(bsList.get(i), 0, bsList.get(i).length);
 				out.close();
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
